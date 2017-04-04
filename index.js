@@ -28,13 +28,13 @@ bot.dialog('/', intents)
 intents
     .matches(/autor/i, '/author')
     .matches(/grāmat/i, '/book')
-    .onDefault('/');
+    .onDefault('/default');
 
 //=========================================================
 // Bots Dialogs
 //=========================================================
 
-bot.dialog('/', session => {
+bot.dialog('/default', session => {
     let msg = new builder.Message(session)
         .addAttachment(
             new builder.HeroCard(session)
@@ -46,13 +46,15 @@ bot.dialog('/', session => {
                 )
         );
     session.send(msg);
-    session.replaceDialog();
+    session.endDialog();
 });
 
 bot.dialog('/book', session => {
     session.send('Te izvēlēsimies grāmatu.')
+    session.endDialog();
 });
 
 bot.dialog('/author', session => {
     session.send('Te izvēlēsimies autoru.')
+    session.endDialog();
 });
