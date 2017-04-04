@@ -19,11 +19,22 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
+var intents = new builder.IntentDialog();
+bot.dialog('/', intents)
+.cancelAction('cancelList', "Ok, atceļam.", {
+    matches: /^atcelt/i
+});
+
+intents
+    .matches(/autor/i, '/author')
+    .matches(/grāmat/i, '/book')
+    .onDefault('/');
+
 //=========================================================
 // Bots Dialogs
 //=========================================================
 
-bot.dialog('/', function (session) {
+bot.dialog('/', session => {
     let msg = new builder.Message(session)
         .addAttachment(
             new builder.HeroCard(session)
@@ -33,7 +44,15 @@ bot.dialog('/', function (session) {
                         b => builder.CardAction.postBack(session, b, b)
                     )
                 )
-        )
+        );
     session.send(msg);
     session.replaceDialog();
+});
+
+bot.dialog('/book', session => {
+    session.send('Te izvēlēsimies grāmatu.')
+});
+
+bot.dialog('/author', session => {
+    session.send('Te izvēlēsimies autoru.')
 });
