@@ -24,5 +24,16 @@ server.post('/api/messages', connector.listen());
 //=========================================================
 
 bot.dialog('/', function (session) {
-    session.send("Hello World");
+    let msg = new builder.Message(session)
+        .addAttachment(
+            new builder.HeroCard(session)
+                .title('Ko Tu vēlies meklēt?')
+                .buttons(
+                    ["Autoru", "Grāmatu"].map(
+                        b => builder.CardAction.postBack(session, b, b)
+                    )
+                )
+        )
+    session.send(msg);
+    session.replaceDialog();
 });
