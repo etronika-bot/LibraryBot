@@ -1,5 +1,6 @@
 var restify = require('restify');
 var builder = require('botbuilder');
+var u = require('./utility.js');
 
 //=========================================================
 // Bot Setup
@@ -50,13 +51,20 @@ bot.dialog('/default', session => {
     session.endDialog();
 });
 
-bot.dialog('/book', session => {
-    session.send('Te izvēlēsimies grāmatu.')
-    session.endDialog();
-});
+bot.dialog('/book', [
+    session => {
+        builder.Prompts.text(session, 'Kāda grāmata Tev interesē.');
+    },
+    (session, res) => {
+        console.log(res);
+        u.search_book(res.response)
+            .then(id => {session.send("Grāmatas id: " + id);});
+        session.endDialog();
+    }
+]);
 
 bot.dialog('/author', session => {
-    session.send('Te izvēlēsimies autoru.')
+    session.send('Te izvēlēsimies autoru.');
     session.endDialog();
 });
 
