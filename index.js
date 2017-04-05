@@ -55,9 +55,13 @@ bot.dialog('/book', [
         builder.Prompts.text(session, 'Kāda grāmata Tev interesē.');
     },
     (session, res) => {
-        console.log(res);
         u.search_book(res.response)
-            .then(id => {session.send("Grāmatas id: " + id);});
+            .then(books => {
+                let msg = new builder.Message(session);
+                msg.attachmentLayout(builder.AttachmentLayout.carousel);
+                msg.attachments(u.book_carousel(session, books));
+                session.send(msg);
+            });
         session.endDialog();
     }
 ]);
