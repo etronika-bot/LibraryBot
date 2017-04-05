@@ -1,0 +1,442 @@
+[
+    {
+        "id": 1,
+        "code": "JPB",
+        "name": "Jelgavas pilsētas bibliotēka",
+        "home_page_url": "http://www.jelgavasbiblioteka.lv/",
+        "isil_code": "LV-BIB-000061",
+        "library_category_id": 1
+    },
+    {
+        "id": 2,
+        "code": "SB",
+        "name": "Jaunsvirlaukas pagasta bibliotēkas",
+        "home_page_url": null,
+        "isil_code": "LV-BIB-000327",
+        "library_category_id": 3
+    },
+    {
+        "id": 3,
+        "code": "35",
+        "name": "Zaļenieku pagasta bibliotēkas",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/zalenieku-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000349",
+        "library_category_id": 3
+    },
+    {
+        "id": 4,
+        "code": "50",
+        "name": "Elejas bibliotēka",
+        "home_page_url": null,
+        "isil_code": "LV-BIB-000324",
+        "library_category_id": 3
+    },
+    {
+        "id": 5,
+        "code": "10",
+        "name": "Ķīves bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/kives-biblioteka",
+        "isil_code": "LV-BIB-000346",
+        "library_category_id": 3
+    },
+    {
+        "id": 6,
+        "code": "6",
+        "name": "Kalnciema bibliotēka",
+        "home_page_url": "http://www.kalnciemam.lv/iestades/izglitiba/kalnciema-bibliotekas",
+        "isil_code": "LV-BIB-000323",
+        "library_category_id": 3
+    },
+    {
+        "id": 7,
+        "code": "51",
+        "name": "Jelgavas Valsts ģimnāzijas bibliotēka",
+        "home_page_url": "http://jvg.jelgava.lv",
+        "isil_code": "LV-BIB-012687",
+        "library_category_id": 2
+    },
+    {
+        "id": 8,
+        "code": "52",
+        "name": "Jelgavas Spīdolas ģimnāzijas bibliotēka",
+        "home_page_url": "http://www.jsg.lv/",
+        "isil_code": "LV-BIB-012691",
+        "library_category_id": 2
+    },
+    {
+        "id": 9,
+        "code": "53",
+        "name": "Zemgales reģiona Kompetenču attīstības centra Metodiskā bibliotēka",
+        "home_page_url": "http://zrkac.lv/?ID=70",
+        "isil_code": "LV-BIB-013445",
+        "library_category_id": 2
+    },
+    {
+        "id": 10,
+        "code": "54",
+        "name": "Jelgavas Tehnoloģiju vidusskolas bibliotēka",
+        "home_page_url": "http://www.1gim.jelgava.lv",
+        "isil_code": "LV-BIB-012686",
+        "library_category_id": 2
+    },
+    {
+        "id": 11,
+        "code": "55",
+        "name": "Kalnciema pagasta vidusskolas bibliotēka",
+        "home_page_url": "http://www.kpvsk.lv/index.php",
+        "isil_code": "LV-BIB-013316",
+        "library_category_id": 2
+    },
+    {
+        "id": 12,
+        "code": "56",
+        "name": "Ozolnieku vidusskolas bibliotēka",
+        "home_page_url": "http://www.ozolniekuvsk.lv/index.php?option=com_content&view=article&id=14&Itemid=31&lang=lv",
+        "isil_code": "LV-BIB-013318",
+        "library_category_id": 2
+    },
+    {
+        "id": 13,
+        "code": "57",
+        "name": "Elejas vidusskolas bibliotēka",
+        "home_page_url": "http://www.elejasvsk.lv",
+        "isil_code": "LV-BIB-013315",
+        "library_category_id": 2
+    },
+    {
+        "id": 14,
+        "code": "58",
+        "name": "Līvbērzes vidusskolas bibliotēka",
+        "home_page_url": "http://www.livberzesvsk.lv",
+        "isil_code": "LV-BIB-013320",
+        "library_category_id": 2
+    },
+    {
+        "id": 15,
+        "code": "59",
+        "name": "Jelgavas 5.vidusskolas bibliotēka",
+        "home_page_url": "http://www.5vsk.jelgava.lv/biblioteka.html",
+        "isil_code": "LV-BIB-012689",
+        "library_category_id": 2
+    },
+    {
+        "id": 16,
+        "code": "60",
+        "name": "Jelgavas 1.internātpamatskolas bibliotēka",
+        "home_page_url": "http://www.jelgava1isk.lv",
+        "isil_code": "LV-BIB-012694",
+        "library_category_id": 2
+    },
+    {
+        "id": 17,
+        "code": "61",
+        "name": "Jelgavas 2.internātpamatskolas bibliotēka",
+        "home_page_url": null,
+        "isil_code": "LV-BIB-012693",
+        "library_category_id": 2
+    },
+    {
+        "id": 18,
+        "code": "62",
+        "name": "Jelgavas 4.sākumskolas bibliotēka",
+        "home_page_url": "http://www.j4psk.lv/index.html",
+        "isil_code": "LV-BIB-012684",
+        "library_category_id": 2
+    },
+    {
+        "id": 19,
+        "code": "63",
+        "name": "Jelgavas 6.vidusskolas bibliotēka",
+        "home_page_url": "http://www.j6vsk.lv/?l=1&menu=40",
+        "isil_code": "LV-BIB-012690",
+        "library_category_id": 2
+    },
+    {
+        "id": 20,
+        "code": "64",
+        "name": "Jelgavas 4.vidusskolas bibliotēka",
+        "home_page_url": "http://4vskbiblioteka.blogspot.com/",
+        "isil_code": "LV-BIB-012688",
+        "library_category_id": 2
+    },
+    {
+        "id": 21,
+        "code": "65",
+        "name": "Jelgavas 3.sākumskolas bibliotēka",
+        "home_page_url": "http://www.3psk.lv",
+        "isil_code": "LV-BIB-012685",
+        "library_category_id": 2
+    },
+    {
+        "id": 22,
+        "code": "66",
+        "name": "Aizupes pamatskolas bibliotēka",
+        "home_page_url": null,
+        "isil_code": "LV-BIB-013323",
+        "library_category_id": 2
+    },
+    {
+        "id": 23,
+        "code": "67",
+        "name": "Jelgavas 2.pamatskolas bibliotēka",
+        "home_page_url": "http://j2psk.lv",
+        "isil_code": "LV-BIB-012683",
+        "library_category_id": 2
+    },
+    {
+        "id": 24,
+        "code": "68",
+        "name": "Jelgavas Amatu vidusskolas bibliotēka",
+        "home_page_url": "http://www.javs.lv",
+        "isil_code": "LV-BIB-013616",
+        "library_category_id": 2
+    },
+    {
+        "id": 25,
+        "code": "69",
+        "name": "Jelgavas Tehnikuma bibliotēka",
+        "home_page_url": "http://www.jelgavastehnikums.lv",
+        "isil_code": "LV-BIB-013509",
+        "library_category_id": 2
+    },
+    {
+        "id": 26,
+        "code": "70",
+        "name": "Jelgavas Vakara (maiņu) vidusskolas bibliotēka",
+        "home_page_url": "http://jvmv.lv",
+        "isil_code": "LV-BIB-013581",
+        "library_category_id": 2
+    },
+    {
+        "id": 27,
+        "code": "71",
+        "name": "Kalnciema vidusskolas bibliotēka",
+        "home_page_url": null,
+        "isil_code": "LV-BIB-013317",
+        "library_category_id": 2
+    },
+    {
+        "id": 28,
+        "code": "72",
+        "name": "Latvijas Republikas Kultūras ministrijas Jelgavas mūzikas vidusskolas bibliotēka",
+        "home_page_url": "http://www.jelgavasmuzskola.lv",
+        "isil_code": "LV-BIB-013572",
+        "library_category_id": 2
+    },
+    {
+        "id": 30,
+        "code": "74",
+        "name": "Lielplatones internātpamatskolas bibliotēka",
+        "home_page_url": "http://www.lielplatonessis.lv",
+        "isil_code": "LV-BIB-013337",
+        "library_category_id": 2
+    },
+    {
+        "id": 31,
+        "code": "75",
+        "name": "Staļģenes vidusskolas bibliotēka",
+        "home_page_url": "http://www.stalgenesskola.lv",
+        "isil_code": "LV-BIB-013331",
+        "library_category_id": 2
+    },
+    {
+        "id": 32,
+        "code": "76",
+        "name": "Teteles pamatskolas bibliotēka",
+        "home_page_url": "http://www.tetelespsk.jrp.lv/",
+        "isil_code": "LV-BIB-013334",
+        "library_category_id": 2
+    },
+    {
+        "id": 33,
+        "code": "77",
+        "name": "Šķibes pamatskolas bibliotēka",
+        "home_page_url": "http://www.skibespamatskola.lv",
+        "isil_code": "LV-BIB-013333",
+        "library_category_id": 2
+    },
+    {
+        "id": 34,
+        "code": "78",
+        "name": "Vilces pamatskolas bibliotēka",
+        "home_page_url": "http://www.vilcespsk.lv",
+        "isil_code": "LV-BIB-013335",
+        "library_category_id": 2
+    },
+    {
+        "id": 35,
+        "code": "79",
+        "name": "Sesavas pamatskolas bibliotēka",
+        "home_page_url": "http://biblsesavaspsk.blogspot.com",
+        "isil_code": "LV-BIB-013330",
+        "library_category_id": 2
+    },
+    {
+        "id": 36,
+        "code": "80",
+        "name": "Svētes pamatskolas bibliotēka",
+        "home_page_url": null,
+        "isil_code": "LV-BIB-013332",
+        "library_category_id": 2
+    },
+    {
+        "id": 37,
+        "code": "81",
+        "name": "Zaļenieku komerciālās un amatniecības vidusskolas bibliotēka ",
+        "home_page_url": "http://www.zav.lv",
+        "isil_code": "LV-BIB-013322",
+        "library_category_id": 2
+    },
+    {
+        "id": 38,
+        "code": "82",
+        "name": "Vircavas vidusskolas bibliotēka",
+        "home_page_url": "http://vircava.1s.lv/18-izglitiba",
+        "isil_code": "LV-BIB-013319",
+        "library_category_id": 2
+    },
+    {
+        "id": 39,
+        "code": "83",
+        "name": "Jelgavas novada Neklātienes vidusskolas bibliotēka ",
+        "home_page_url": "http://www.nvsk.jrp.lv",
+        "isil_code": "LV-BIB-013321",
+        "library_category_id": 2
+    },
+    {
+        "id": 40,
+        "code": "84",
+        "name": "Salgales pamatskolas bibliotēka ",
+        "home_page_url": "http://www.ozolnieki.lv/izglitiba/skolas/salgales-pamatskola",
+        "isil_code": "LV-BIB-013329",
+        "library_category_id": 2
+    },
+    {
+        "id": 42,
+        "code": "86",
+        "name": "Garozas pamatskolas bibliotēka",
+        "home_page_url": "http://www.ozolnieki.lv/izglitiba/skolas/garozas-pamatskola",
+        "isil_code": "LV-BIB-013324",
+        "library_category_id": 2
+    },
+    {
+        "id": 44,
+        "code": "14",
+        "name": "Nākotnes bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/nakotnes-biblioteka",
+        "isil_code": "LV-BIB-000326",
+        "library_category_id": 3
+    },
+    {
+        "id": 45,
+        "code": "33",
+        "name": "Vircavas bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/vircavas-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000348",
+        "library_category_id": 3
+    },
+    {
+        "id": 46,
+        "code": "15",
+        "name": "Bramberģes bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/bramberges-biblioteka",
+        "isil_code": "LV-BIB-000325",
+        "library_category_id": 3
+    },
+    {
+        "id": 47,
+        "code": "19",
+        "name": "Lielplatones bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/lielplatones-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000330",
+        "library_category_id": 3
+    },
+    {
+        "id": 48,
+        "code": "20",
+        "name": "Līvbērzes bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/livberzes-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000331",
+        "library_category_id": 3
+    },
+    {
+        "id": 49,
+        "code": "21",
+        "name": "Platones  bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/platones-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000336",
+        "library_category_id": 3
+    },
+    {
+        "id": 50,
+        "code": "22",
+        "name": "Lielvircavas bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/lielvircavas-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000337",
+        "library_category_id": 3
+    },
+    {
+        "id": 51,
+        "code": "23",
+        "name": "Sesavas bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/sesavas-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000338",
+        "library_category_id": 3
+    },
+    {
+        "id": 52,
+        "code": "25",
+        "name": "Bērvircavas bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/bervircavas-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000339",
+        "library_category_id": 3
+    },
+    {
+        "id": 53,
+        "code": "28",
+        "name": "Svētes bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/svetes-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000341",
+        "library_category_id": 3
+    },
+    {
+        "id": 54,
+        "code": "29",
+        "name": "Jēkabnieku bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/jekabnieku-biblioteka",
+        "isil_code": "LV-BIB-000342",
+        "library_category_id": 3
+    },
+    {
+        "id": 55,
+        "code": "30",
+        "name": "Valgundes bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/valgundes-biblioteka",
+        "isil_code": "LV-BIB-000343",
+        "library_category_id": 3
+    },
+    {
+        "id": 56,
+        "code": "18",
+        "name": "Tīreļu bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/tirelu-biblioteka",
+        "isil_code": "LV-BIB-000344",
+        "library_category_id": 3
+    },
+    {
+        "id": 57,
+        "code": "9",
+        "name": "Vilces bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/vilces-pagasta-biblioteka",
+        "isil_code": "LV-BIB-000345",
+        "library_category_id": 3
+    },
+    {
+        "id": 58,
+        "code": "38",
+        "name": "Ziedkalnes bibliotēka",
+        "home_page_url": "http://www.jzb.lv/par-mums/citas-bibliotekas/ziedkalnes-biblioteka",
+        "isil_code": "LV-BIB-000347",
+        "library_category_id": 3
+    }
+]
