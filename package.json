@@ -19,6 +19,7 @@
   "dependencies": {
     "azure-storage": "^2.1.0",
     "botbuilder": "^3.7.0",
+    "botbuilder-cognitiveservices": "^1.0.1",
     "fuse.js": "^2.6.2",
     "jsdom": "^9.12.0",
     "restify": "^4.3.0"

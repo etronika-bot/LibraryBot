@@ -2,6 +2,8 @@ var restify = require('restify');
 var builder = require('botbuilder');
 var u = require('./utility.js');
 var libs = require('./libs.json');
+var cognitiveservices = require('botbuilder-cognitiveservices');
+
 
 //=========================================================
 // Bot Setup
@@ -30,7 +32,7 @@ bot.dialog('/', intents)
 intents
     .matches(/autor/i, '/author')
     .matches(/grāmat/i, '/book')
-    .matches(/atbild/i, '/qna')
+    .matches(/uzdot jautājumu/i, '/qna')
     .matches(/annotate-/i, '/annotate')
     .matches(/mainīt bibliotēku/i, '/chooselib')
     .matches(/libid-/, '/libid')
@@ -42,7 +44,6 @@ intents
 
 bot.dialog('/default', [
     (session, args, next) => {
-        console.log(session.userData);
         if (!session.userData.lib) {
             session.beginDialog('/chooselib');
         } else {
@@ -67,7 +68,7 @@ bot.dialog('/default', [
 
 bot.dialog('/book', [
     session => {
-        builder.Prompts.text(session, 'Kāda grāmata Tev interesē.');
+        builder.Prompts.text(session, 'Kāda grāmata Tev interesē?');
     },
     (session, res) => {
         u.search_book(res.response)
@@ -81,15 +82,31 @@ bot.dialog('/book', [
     }
 ]);
 
-bot.dialog('/author', session => {
-    session.send('Te izvēlēsimies autoru.');
-    session.endDialog();
-});
+bot.dialog('/author', [
+    session => {
+        builder.Prompts.text(session, 'Kura autora grāmatas Tevi interesē?');
+    },
+    (session, res) => {
+        u.search_book(res.response, 'author')
+            .then(books => {
+                let msg = new builder.Message(session);
+                msg.attachmentLayout(builder.AttachmentLayout.carousel);
+                msg.attachments(u.book_carousel(session, books));
+                session.send(msg);
+            });
+        session.endDialog();
+    }
+]);
 
-bot.dialog('/qna', session => {
-    session.send('Te meklēsim atbildes uz jautājumiem brīvā formātā.')
-    session.endDialog();
-});
+bot.dialog('/qna', [
+    session => {
+        builder.Prompts.text(session, 'Ko vēlies uzzināt?');
+    },
+    (session, res) => {
+        u.qna(res.response).then(answer => {console.log(answer); session.send(answer)});
+        session.endDialog();
+    }
+]);
 
 bot.dialog('/annotate', session => {
     let t = session.message.text;

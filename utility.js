@@ -51,11 +51,14 @@ var get_book = function(id) {
     });
 }
 
-var search_book = function (s) {
-    let url = 'https://jelgava.biblioteka.lv/Alise/lv/advancedsearch.aspx?crit0=name&op0=%25LIKE%25&val0=';
+var search_book = function (s, type = 'book') {
+    let url = {
+        'book': 'https://jelgava.biblioteka.lv/Alise/lv/advancedsearch.aspx?crit0=name&op0=%25LIKE%25&val0=',
+        'author': 'https://jelgava.biblioteka.lv/Alise/lv/advancedsearch.aspx?crit0=auth&op0=%25LIKE%25&val0='
+    }
     return new Promise((resolve, reject) => {
         jsdom.env(
-            url + s,
+            url[type] + s,
             (error, window) => {
                 if (error) {
                     reject('Diemžēl neizdevās. ' + error);
@@ -114,10 +117,42 @@ var lib_carousel = function(session, libs) {
     });
 }
 
+var qna = function (question) {
+    return new Promise((resolve, reject) => {
+        if (!question) {reject("Nav uzdots jautājums");}
+        var options = {
+            url: 'https://westus.api.cognitive.microsoft.com/qnamaker/v1.0/knowledgebases/da32cf6d-adfd-49bf-b874-96fe25375112/generateAnswer',
+            headers: {
+                'Ocp-Apim-Subscription-Key': '8346b5f3fa9e4369807cbf8489e54053',
+                'Content-Type': 'application/json',
+                'Cache-Control': 'no-cache'
+            },
+            form: { 'question': question }
+        };
+        
+        request.post(
+            options,
+            (error, response, body) => {
+                if (!error && response.statusCode == 200) {
+                    var info = JSON.parse(body);
+                    if (info.score > 5) {
+                        resolve(info.answer);
+                    }
+                    else {
+                        resolve("Diemžēl nezinu atbildi. Kā vēl varu palīdzēt?");
+                    }
+                }
+            }
+        );
+    });
+}
+
+
 module.exports = {
     search_book: search_book,
     book_carousel: book_carousel,
     get_book: get_book,
     get_lib_options: get_lib_options,
-    lib_carousel: lib_carousel
+    lib_carousel: lib_carousel,
+    qna: qna
 };
