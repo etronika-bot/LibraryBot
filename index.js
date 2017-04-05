@@ -29,6 +29,7 @@ bot.dialog('/', intents)
 intents
     .matches(/autor/i, '/author')
     .matches(/grāmat/i, '/book')
+    .matches(/atbild/i, '/qna')
     .onDefault('/default');
 
 //=========================================================
@@ -41,7 +42,7 @@ bot.dialog('/default', session => {
             new builder.HeroCard(session)
                 .title('Ko Tu vēlies meklēt?')
                 .buttons(
-                    ["Autoru", "Grāmatu"].map(
+                    ["Autoru", "Grāmatu", "Atbildes"].map(
                         b => builder.CardAction.postBack(session, b, b)
                     )
                 )
@@ -68,5 +69,10 @@ bot.dialog('/book', [
 
 bot.dialog('/author', session => {
     session.send('Te izvēlēsimies autoru.');
+    session.endDialog();
+});
+
+bot.dialog('/qna', session => {
+    session.send('Te meklēsim atbildes uz jautājumiem brīvā formātā.')
     session.endDialog();
 });
